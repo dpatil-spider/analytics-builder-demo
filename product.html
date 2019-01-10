@@ -1044,6 +1044,9 @@
                         //console.log($(this)[0].innerText) 
                          _etmc.push(["trackPageView", { "item" :'ShoppingCategory_'+$(this)[0].innerText}]);         
                   });   
+                 $(".search-product button").click(function(){
+                     _etmc.push(["trackPageView", { "search" : $(".search-product input")[0].value }]); 
+                  });   
               
                  }); 
       </script>
