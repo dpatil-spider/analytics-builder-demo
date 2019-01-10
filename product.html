@@ -1042,6 +1042,10 @@
          		  $('#Price_Filter').click(function(){
          		   _etmc.push(["trackPageView", { "item" :'Filter_Apply_Price'}]); 
          		  });   
+                  $(".p-b-54 li").click(function(){ 
+                        //console.log($(this)[0].innerText) 
+                         _etmc.push(["trackPageView", { "item" :'ShoppingCategory_'+$(this)[0].innerText}]);         
+                  });   
               
                  }); 
       </script>
