@@ -1042,7 +1042,10 @@
          		  });   
                   $(".p-b-54 li").click(function(){ 
                         //console.log($(this)[0].innerText) 
-                         _etmc.push(["trackPageView", { "item" :'ShoppingCategory_'+$(this)[0].innerText}]);         
+                         //_etmc.push(["trackPageView", { "item" :'ShoppingCategory_'+$(this)[0].innerText}]);         
+                     _etmc.push(["trackConversion", { "cart": [
+                     {"item" : "INSERT_ITEM", $(this)[0].innerText:  "INSERT_QUANTITY" , "100.00" : "INSERT_PRICE","unique_id" : $(this)[0].innerText }
+                  }]);      
                   });   
                  $(".search-product button").click(function(){
                      _etmc.push(["trackPageView", { "search" : $(".search-product input")[0].value }]); 
