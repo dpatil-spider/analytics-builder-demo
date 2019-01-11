@@ -1034,7 +1034,7 @@
          				_etmc.push(["trackPageView", { "item" :'Filter_Currency_'+$(this)[0].value }]); 
                            });
          				$('.block2-txt a').click(function(){
-         				 //_etmc.push(["trackPageView", { "item" :'Product_'+$(this)[0].innerText}]); 
+         				   _etmc.push(["trackPageView", { "item" :'Product_'+$(this)[0].innerText}]); 
                         _etmc.push(["trackConversion", { "cart": [
                         {"item" : $(this)[0].innerText, "quantity":  "1" , "price" : "99.99","unique_id" : $(this)[0].innerText }]}])
          					
