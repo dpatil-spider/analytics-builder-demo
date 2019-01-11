@@ -1034,10 +1034,12 @@
          				_etmc.push(["trackPageView", { "item" :'Filter_Currency_'+$(this)[0].value }]); 
                            });
          				$('.block2-txt a').click(function(){
+                        var price =$(this).parent().find('span')[0].innerText;
+                        
          				   _etmc.push(["trackPageView", { "item" :'Product_'+$(this)[0].innerText}]); 
-                        console.log($(this).find('.block2-txt span')[0].innerText);
-                       // _etmc.push(["trackConversion", { "cart": [
-                        //{"item" : $(this)[0].innerText, "quantity":  "1" , "price" : $('this .block2-txt span')[0].innerText,"unique_id" : $(this)[0].innerText }]}])
+                        //console.log($(this).find('.block2-txt span')[0].innerText);
+                        _etmc.push(["trackConversion", { "cart": [
+                        {"item" : $(this)[0].innerText, "quantity":  "1" , "price" : price.replace("$",''),"unique_id" : $(this)[0].innerText }]}])
          					
          				 });
          		  $('#Price_Filter').click(function(){
