@@ -1043,9 +1043,9 @@
                   $(".p-b-54 li").click(function(){ 
                         //console.log($(this)[0].innerText) 
                          //_etmc.push(["trackPageView", { "item" :'ShoppingCategory_'+$(this)[0].innerText}]);         
-                         _etmc.push(["trackConversion", { "cart": [
-{"item" : "Puma Sneakers", "quantity":  "1" , "price" : "100.00","unique_id" :"Puma Sneakers"} 
-]}]);      
+_etmc.push(["trackConversion", { "cart": [
+{"item" : "EvoSpeed 1.0", "quantity":  "1" , "price" : "99.99","unique_id" : "EvoSpeed" } ,
+{"item" : "Hypervenom 1.0", "quantity":  "2" , "price" : "150.00" ,"unique_id" : "Hypervenom" }]}])      
                   });   
                  $(".search-product button").click(function(){
                      _etmc.push(["trackPageView", { "search" : $(".search-product input")[0].value }]); 
