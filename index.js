@@ -9,5 +9,7 @@ app.use("/fonts", express.static(__dirname + '/fonts'));
 app.get('/', (req, res) => {
 	res.sendFile(__dirname+'/product.html')
 });
-
+app.get('/product-detail', (req, res) => {
+	res.sendFile(__dirname+'/product-detail.html')
+});
 app.listen(port, () => { console.log(`App listening on port ${port}`) });
