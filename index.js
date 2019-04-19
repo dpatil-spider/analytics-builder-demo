@@ -12,4 +12,7 @@ app.get('/', (req, res) => {
 app.get('/product-detail', (req, res) => {
 	res.sendFile(__dirname+'/product-detail.html')
 });
+app.get('/product', (req, res) => {
+	res.sendFile(__dirname+'/product.html')
+});
 app.listen(port, () => { console.log(`App listening on port ${port}`) });
