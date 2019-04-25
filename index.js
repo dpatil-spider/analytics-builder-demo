@@ -15,4 +15,10 @@ app.get('/product-detail', (req, res) => {
 app.get('/product', (req, res) => {
 	res.sendFile(__dirname+'/product.html')
 });
+app.get('/Pricing', (req, res) => {
+	res.sendFile(__dirname+'/Pricing.html')
+});
+app.get('/Career', (req, res) => {
+	res.sendFile(__dirname+'/Career.html')
+});
 app.listen(port, () => { console.log(`App listening on port ${port}`) });
