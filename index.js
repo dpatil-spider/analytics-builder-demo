@@ -27,6 +27,10 @@ app.get('/office', (req, res) => {
 app.get('/street', (req, res) => {
 	res.sendFile(__dirname+'/street.html')
 });
+
+app.get('/contact', (req, res) => {
+	res.sendFile(__dirname+'/contact.html')
+});
 app.get('/Pricing', (req, res) => {
 	res.sendFile(__dirname+'/Pricing.html')
 });
