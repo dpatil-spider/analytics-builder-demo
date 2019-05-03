@@ -15,6 +15,18 @@ app.get('/product-detail', (req, res) => {
 app.get('/product', (req, res) => {
 	res.sendFile(__dirname+'/product.html')
 });
+app.get('/poultry', (req, res) => {
+	res.sendFile(__dirname+'/poultry.html')
+});
+app.get('/horticulture', (req, res) => {
+	res.sendFile(__dirname+'/horticulture.html')
+});
+app.get('/office', (req, res) => {
+	res.sendFile(__dirname+'/office.html')
+});
+app.get('/street', (req, res) => {
+	res.sendFile(__dirname+'/street.html')
+});
 app.get('/Pricing', (req, res) => {
 	res.sendFile(__dirname+'/Pricing.html')
 });
