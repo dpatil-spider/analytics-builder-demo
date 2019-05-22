@@ -38,7 +38,7 @@ app.get('/Career', (req, res) => {
 	res.sendFile(__dirname+'/Career.html')
 });
 app.get('/piechart', (req, res) => {
-	res.sendFile(__dirname+'/piechart.html')
+	res.sendFile(__dirname+'/PieChart.html')
 });
 
 app.listen(port, () => { console.log(`App listening on port ${port}`) });
