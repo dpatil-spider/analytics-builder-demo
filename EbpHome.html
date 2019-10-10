@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tracking page Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://7291811.collect.igodigital.com/collect.js"></script>
 </head>
 
@@ -15,14 +16,14 @@
 	</h1>
 
     <script>
-	document.addEventListener('DOMContentLoaded', (event) => {
+	$(document).ready(function(){
 		var urlParams = new URLSearchParams(window.location.search);
 		var emailParam = urlParams.get('utm_email');
 		console.log(urlParams.get('utm_email'));
 
 		_etmc.push(["setOrgId", "7291811"]);
 		_etmc.push(["setUserInfo", {"email": emailParam}]);
-	})
+	});
         
     </script>
 </body>
