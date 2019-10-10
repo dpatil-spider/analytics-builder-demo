@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tracking page Website</title>
+    <script type="text/javascript" src="http://7291811.collect.igodigital.com/collect.js"></script>
+</head>
+
+<body>
+    <h1>
+	EBP Website Home page
+	</h1>
+
+    <script type="text/javascript">
+        var urlParams = new URLSearchParams(window.location.search);
+		var emailParam = urlParams.get('utm_email');
+        console.log(urlParams.get('utm_email'));
+		
+        _etmc.push(["setOrgId", "7291811"]);
+        _etmc.push(["setUserInfo", {"email": emailParam}]);
+    </script>
+</body>
+</script>
+
+</html>
