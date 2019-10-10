@@ -40,5 +40,9 @@ app.get('/Career', (req, res) => {
 app.get('/piechart', (req, res) => {
 	res.sendFile(__dirname+'/PieChart.html')
 });
+app.get('/ebphome', (req, res) => {
+	res.sendFile(__dirname+'/EbpHome.html')
+});
+
 
 app.listen(port, () => { console.log(`App listening on port ${port}`) });
