@@ -11,11 +11,13 @@
 </head>
 
 <body>
-    <h1>
+<h1>
 	EBP Website Home page
-	</h1>
-
-    <script type="text/javascript">
+</h1>
+<p>
+<input type="button" value="Submit" onclick="collectTracking()" />
+</p>
+<script type="text/javascript">
 	$(document).ready(function(){
 		var urlParams = new URLSearchParams(location.search);
 		var emailParam = urlParams.get('utm_email');
@@ -25,6 +27,20 @@
 		_etmc.push(["setUserInfo", {"email": emailParam}]);
 		_etmc.push(["trackPageView"]);
 	});
+	
+function collectTracking()
+{
+var pageTitle = document.title
+
+_etmc.push(["trackConversion", {"cart" : [{
+"item" :pageTitle,
+"quantity" : "1",
+"price" : "0"
+}],
+}
+]);
+
+}
         
     </script>
 </body>
