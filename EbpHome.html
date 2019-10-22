@@ -31,11 +31,14 @@
 function collectTracking()
 {
 var pageTitle = document.title
+var currentdate = new Date(); 
 
+_etmc.push(["setOrgId", "7291811"]);
 _etmc.push(["trackConversion", {"cart" : [{
 "item" :pageTitle,
 "quantity" : "1",
-"price" : "0"
+"price" : "10", 
+"unique_id" : currentdate.getHours() + "" + currentdate.getMinutes() + "" + currentdate.getSeconds()
 }],
 }
 ]);
