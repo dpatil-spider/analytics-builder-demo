@@ -43,7 +43,7 @@ app.get('/piechart', (req, res) => {
 app.get('/ebphome', (req, res) => {
 	res.sendFile(__dirname+'/EbpHome.html')
 });
-app.get('/fromsebp', (req, res) => {
+app.get('/formsebp', (req, res) => {
 	res.sendFile(__dirname+'/FormsEBP.html')
 });
 
