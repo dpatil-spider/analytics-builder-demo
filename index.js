@@ -43,6 +43,9 @@ app.get('/piechart', (req, res) => {
 app.get('/ebphome', (req, res) => {
 	res.sendFile(__dirname+'/EbpHome.html')
 });
+app.get('/fromsebp', (req, res) => {
+	res.sendFile(__dirname+'/FormsEBP.html')
+});
 
 
 app.listen(port, () => { console.log(`App listening on port ${port}`) });
