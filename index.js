@@ -49,8 +49,7 @@ app.get('/formsebp', (req, res) => {
 app.get('/keepsight', (req, res) => {
 	res.sendFile(__dirname+'/KeepSight.html')
 });
-
-
-
-
+app.get('/loadlogtime', (req, res) => {
+	res.sendFile(__dirname+'/LoadLogTime.txt')
+});
 app.listen(port, () => { console.log(`App listening on port ${port}`) });
