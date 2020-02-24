@@ -46,6 +46,11 @@ app.get('/ebphome', (req, res) => {
 app.get('/formsebp', (req, res) => {
 	res.sendFile(__dirname+'/FormsEBP.html')
 });
+app.get('/keepsight', (req, res) => {
+	res.sendFile(__dirname+'/KeepSight.html')
+});
+
+
 
 
 app.listen(port, () => { console.log(`App listening on port ${port}`) });
