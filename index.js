@@ -47,7 +47,16 @@ app.get('/formsebp', (req, res) => {
 	res.sendFile(__dirname+'/FormsEBP.html')
 });
 app.get('/keepsight', (req, res) => {
+
+	const fs = require('fs');
+	var dateTimeData = Date(Date.now());
+	fs.appendFile('LoadLogTime.txt', dateTimeData + '\n', function (err) {
+		if (err) throw err;
+		console.log('Saved!');
+	});
+
 	res.sendFile(__dirname+'/KeepSight.html')
+	
 });
 app.get('/loadlogtime', (req, res) => {
 	res.sendFile(__dirname+'/LoadLogTime.txt')
