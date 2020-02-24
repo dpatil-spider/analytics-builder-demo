@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KeepSight Home Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>
+	KeepSight Home Page
+</h1>
+<p>
+Personally I'd steer well clear of Winston. We've used it for over a year now, and have finally decided to remove it completely as it was causing many issues in our production environment. The project seems to now be extremely poorly maintained. There's an issues list as long as your arm. Many of the issues have had pull requests submitted by other users, but the project maintainers are not even taking the time to merge these. For alternatives node-bunyan and caterpillar might be worth looking at.
+</p>
+<script type="text/javascript">
+	$(document).ready(function(){
+		  const fs = require('fs');
+      var dateTimeData = Date(Date.now());
+      fs.appendFile('LoadLogTime.txt', dateTimeData + '\n', function (err) {
+        if (err) throw err;
+        console.log('Saved!');
+      });
+});
+
+    </script>
+</body>
+</script>
+
+</html>
+
